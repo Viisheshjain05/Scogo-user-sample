@@ -1,18 +1,18 @@
-//? Component
-import Leftbar from "../components/organisms/Leftbar";
-import Topbar from "../components/organisms/Topbar";
+import Leftbar from "./Leftbar";
+import Topbar from "./Topbar";
 
-export default function Layout({ children }) {
+export default function Layout({children}) {
   return (
-    <div className="flex flex-col h-screen">
+    <div className='flex flex-col h-screen'>
       <Topbar />
-      <div
-        className="flex flex-grow"
-        style={{ height: window.innerHeight - 64 }}
+      <div className='flex flex-grow' 
+        style={window.innerWidth<=1440 ? 
+          {height: 1.25*window.innerHeight-64, zoom: '80%'} : 
+          {height: window.innerHeight-64, zoom: '100%'}}
       >
         <Leftbar />
         {children}
       </div>
     </div>
-  );
+  )
 }
