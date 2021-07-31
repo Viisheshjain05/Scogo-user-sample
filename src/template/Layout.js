@@ -1,5 +1,6 @@
-import Leftbar from "./Leftbar";
-import Topbar from "./Topbar";
+//? Component
+import Leftbar from "../components/organisms/Leftbar";
+import Topbar from "../components/organisms/Topbar";
 
 export default function Layout({children}) {
   return (
