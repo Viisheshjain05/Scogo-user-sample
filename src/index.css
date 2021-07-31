@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.red { background-color: #E74C3C; }
+.green { background-color: #2ECC71; }
+.blue { background-color: #3498DB; }
+.orange { background-color: #F48A21; }
+.gray-8 { background-color: #888888; }
+.dark { background-color: #151515; }
+.light-blue { background-color: #E7F2FF; }
+.dark-blue { background-color: #12355F; }
+.gray-9 { background-color: #999999; }
+.gray-c { background-color: #CCCCCC; }
+.gray-e { background-color: #EEEEEE; }
+.gray-d { background-color: #DDDDDD; }
+
